@@ -1,0 +1,204 @@
+@import "message";
+
+body.red {
+    * {
+        -webkit-text-stroke: #df0000 3px;
+        #gl {
+            background-color: #df0000;
+            border: solid #df0000 1px;
+        }
+        #AlertYou {
+            -webkit-text-stroke: #df0000 3px;
+        }
+        #guessButton {
+            border: solid #df0000 4px;
+        }
+    }
+}
+
+body.green {
+    * {
+        -webkit-text-stroke: #005100 3px;
+        #gl {
+            background-color: #005100;
+            border: solid #005100 1px;
+        }
+        #AlertYou {
+            -webkit-text-stroke: #005100 3px;
+        }
+        #guessButton {
+            border: solid #005100 4px;
+        }
+    }
+}
+
+body.blue {
+    * {
+        -webkit-text-stroke: #0000ff 3px;
+        #gl {
+            background-color: #0000ff;
+            border: solid #0000ff 1px;
+        }
+        #AlertYou {
+            -webkit-text-stroke: #0000ff 3px;
+        }
+        #guessButton {
+            border: solid #0000ff 4px;
+        }
+    }
+}
+
+body.white {
+    * {
+        -webkit-text-stroke: #bbb 3px;
+        #gl {
+            background-color: #bbb;
+            border: solid #bbb 1px;
+        }
+        #AlertYou {
+            -webkit-text-stroke: #bbb 3px;
+        }
+        #guessButton {
+            border: solid #bbb 4px;
+        }
+    }
+}
+
+
+body {
+    margin: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+
+canvas {
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#choseColor {
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    height: fit-content;
+    width: fit-content;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    border: solid #444 2px;
+    border-radius: 50%;
+    &:hover {
+        cursor: pointer;
+        top: -2.5px;
+        left: -2.5px;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+#d1 {
+    position: absolute;
+    background-color: #ff0000;
+}
+
+#d2 {
+    position: absolute;
+    left: 50px;
+    background-color: #0f0;
+}
+
+#d3 {
+    position: absolute;
+    left: 100px;
+    background-color: #0029ff;
+}
+
+#d4 {
+    position: absolute;
+    left: 150px;
+    background-color: #fff;
+}
+
+.guessBox {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bungee';
+    text-align: center;
+    font-size: 60px;
+    >.pt {
+        user-select: none;
+        line-height: 30px;
+    }
+}
+
+#theNum {
+    position: absolute;
+    user-select: none;
+    color: rgba(0, 0, 0, 0);
+    font-family: 'Bungee';
+    text-align: center;
+    font-size: 60px;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+#input {
+    position: relative;
+    height: 80px;
+    width: 470px;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 80px;
+}
+
+#pg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+#glb {
+    position: relative;
+    top:  50px;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+
+#guessButton {
+    position: absolute;
+    height: 110px;
+    width: 250px;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 55px;
+    &:hover {
+        cursor: pointer;
+        height: 120px;
+        width: 260px;
+        font-size: 60px;
+    }
+}
+
+#gbp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}

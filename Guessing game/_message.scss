@@ -1,0 +1,26 @@
+.alertContainer {
+    position: fixed;
+    top: 15px;
+    user-select: none;
+    height: 10%;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    >p {
+        font-family: 'Bungee';
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        animation: fadeAlert ease-out 2.7s forwards;
+        font-size: 2rem;
+        text-shadow: 2px 2px 1rem #f5f5f590;
+        text-transform: capitalize;
+        @keyframes fadeAlert {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Have a guess</title>
+</head>
+<body class="green" lang="en">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+
+
+    <div class="fullPage">
+        <div id="AlertYou" class="alertContainer">
+            
+        </div>
+        <div id="choseColor">
+            <span id="d1" class="dot"></span>
+            <span id="d2" class="dot"></span>
+            <span id="d3" class="dot"></span>
+            <span id="d4" class="dot"></span>
+        </div>
+        <p id="theNum"></p>
+        <div class="guessBox" id="guessBox">
+            <p class="pt">can you guess the</p>
+            <p class="pt">number?</p>
+            <div id="input">
+                <p id="pg"></p>
+            </div>
+            <div id="glb">
+                <hr id="gl">
+            </div>
+            <div id="guessButton">
+                <p id="gbp">Guess</p>
+            </div>
+        </div>
+        <canvas id="c"></canvas>
+    </div>
+    
+    <script src="matrix.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
